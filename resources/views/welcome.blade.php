@@ -8,7 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+        <link rel="stylesheet" href="/css/app.css">
         <!-- Styles -->
         <style>
             html, body {
@@ -16,12 +16,12 @@
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
-                height: 100vh;
+                /*height: 100vh;*/
                 margin: 0;
             }
 
             .full-height {
-                height: 100vh;
+                height: 10vh;
             }
 
             .flex-center {
@@ -78,20 +78,35 @@
                     @endauth
                 </div>
             @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+        </div>
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header">
+                    <strong>Payment Data Of {{now()->monthName}}</strong>
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>SL</th>
+                            <th>Name</th>
+                            <th>Payment Date</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @forelse ($payments as $key=>$payment)
+                            <tr>
+                                <td>{{$key+1}}</td>
+                                <td>{{$payment->user->name}}</td>
+                                <td>{{\Carbon\Carbon::parse($payment->created_at)->format('d F, Y')}}</td>
+                            </tr>
+                        @empty
+                            <tr>
+                                <td colspan="3" class="text-center">No Data Found</td>
+                            </tr>
+                        @endforelse
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
