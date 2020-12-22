@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa47d079-0dc4-4f36-8602-f954fe484d35" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <disabled>
       <disabled_changelists>
@@ -146,17 +147,11 @@
       <option name="presentableId" value="Default" />
       <updated>1605110756157</updated>
       <workItem from="1605110757193" duration="2326000" />
-      <workItem from="1608645970910" duration="487000" />
+      <workItem from="1608645970910" duration="948000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="493" y="141" key="FileChooserDialogImpl" timestamp="1605199699083">
-      <screen x="45" y="24" width="1321" height="744" />
-    </state>
-    <state x="493" y="141" key="FileChooserDialogImpl/45.24.1321.744@45.24.1321.744" timestamp="1605199699083" />
   </component>
 </project>
