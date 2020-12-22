@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fa47d079-0dc4-4f36-8602-f954fe484d35" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
     </list>
     <disabled>
       <disabled_changelists>
@@ -156,7 +155,7 @@
       <updated>1605110756157</updated>
       <workItem from="1605110757193" duration="2326000" />
       <workItem from="1608645970910" duration="3565000" />
-      <workItem from="1608651945716" duration="651000" />
+      <workItem from="1608651945716" duration="952000" />
     </task>
     <servers />
   </component>
