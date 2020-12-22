@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -38,4 +39,12 @@ class LoginController extends Controller
     }
     protected $maxAttempts = 3;
     protected $decayMinutes = 10;
+    protected function authenticated(Request $request, $user)
+    {
+        $days = now()->format('Y-m-d');
+        if ($days>$user->expire) {
+            $user->status = 0;
+            $user->save();
+        }
+    }
 }
