@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa47d079-0dc4-4f36-8602-f954fe484d35" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Subscription.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_22_143531_create_subscriptions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/payment_form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codingtest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codingtest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -167,7 +170,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605110756157</updated>
       <workItem from="1605110757193" duration="2326000" />
-      <workItem from="1608645970910" duration="1871000" />
+      <workItem from="1608645970910" duration="2486000" />
     </task>
     <servers />
   </component>

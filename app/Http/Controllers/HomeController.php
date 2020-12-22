@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Subscription;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -24,9 +25,9 @@ class HomeController extends Controller
             \Stripe\Stripe::setApiKey(config('services.stripe.secret'));
             $amount = 10 *100;
             $payment_intent = \Stripe\PaymentIntent::create([
-                'description' => 'Stripe Test Payment',
+                'description' => now()->monthName.' activate account',
                 'amount' => $amount,
-                'currency' => 'usd',
+                'currency' => 'usd'
             ]);
             $intent = $payment_intent->client_secret;
             return $data = view('payment_form',compact('intent'))->render();
